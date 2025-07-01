@@ -53,8 +53,8 @@ nav:
   - Wybrany projekt:
     - 📋 Opis: my_project/desc.md
     - Log: my_project/log.md
-  - Przykłady:
-    - 👽 STAC: stac.ipynb
+  - Kod:
+    - Ekstrakcja Danych: my_project/Data_Extraction.ipynb
     - 👽 GeoParquet: geoparquet.ipynb
   - Projekty:
     - Sposób prowadzenia projektów: projects/ways_of_working.md
