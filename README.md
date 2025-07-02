@@ -1,16 +1,30 @@
-# Data Analysis in Earth Sciences
+# Uruchomienie projektu
 
-## Getting started
-### Create virtual environment
+## Wymagania
 
-Make sure you have `conda-lock` installed. If you already have it, run the command below to create the environment based on `conda-lock.yml` file.
+- Zainstalowana [Anaconda](https://www.anaconda.com/products/distribution) lub [Miniconda](https://docs.conda.io/en/latest/miniconda.html)  
+- System operacyjny Windows/Linux/macOS  
 
-```
-conda-lock install --mamba -n daes-env conda-lock.yml
-```
+## Instrukcja
 
-### Activate environment
+1. **Sklonuj repozytorium:**
 
-```
-mamba activate daes-env
-```
+   ```bash
+   git clone https://github.com/eo-agh/daes-project-2425-zuhura-masamba
+   cd daes-project-2425-zuhura-masamba
+   ```
+
+2. **Utwórz i aktywuj środowisko Conda:**
+
+   ```bash
+   conda env create -f env.yml
+   conda activate my_project_env
+   ```
+
+3. **Uruchom Jupyter Lab:**
+
+   ```bash
+   jupyter lab
+   ```
+
+4. **Otwórz notatniki w folderze `notebooks` i wykonuj analizy.**

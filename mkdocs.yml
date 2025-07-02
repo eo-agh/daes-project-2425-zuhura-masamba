@@ -1,8 +1,6 @@
-site_name: Analiza danych w naukach o Ziemi
+site_name: Analiza danych w naukach o Ziemi Projekt Zmiany Klimatyczne
 docs_dir: docs
-repo_url: https://github.com/eo-agh/data-analysis-earth-sciences
-
-copyright: Copyright 2024 Jakub Staszel KGiIS AGH
+repo_url: https://github.com/eo-agh/daes-project-2425-zuhura-masamba
 
 theme:
   name: material
@@ -50,19 +48,10 @@ markdown_extensions:
 
 nav:
   - Strona główna: index.md
-  - Wybrany projekt:
-    - 📋 Opis: my_project/desc.md
-    - Log: my_project/log.md
+  - Projekt:
+    - Opis: desc.md
+    - Log: log.md
   - Kod:
-    - Ekstrakcja Danych: my_project/Data_Extraction.ipynb
-    - 👽 GeoParquet: geoparquet.ipynb
-  - Projekty:
-    - Sposób prowadzenia projektów: projects/ways_of_working.md
-    - Tematy:
-      - Zmiany klimatyczne w miastach: projects/meteo_data_for_cities.md
-      - Wykrywanie anomalii na optycznych danych sat.: projects/anomalies_sentinel2.md
-      - Analiza zmian w użytkowaniu terenu: projects/lulc.md
-      - Wykrywanie zmian wysokości terenu: projects/insar.md
-      - Analiza przestrzenna dla przejazdów karetek w Małopolsce: projects/ambulances.md
-      - Modele nadrozdzielcze danych Sentinel-2: projects/sr.md
-      - Inne: projects/other.md 
+    - EDA: notebooks/EDA.ipynb
+    - Analiza trendu: notebooks/Trend.ipynb
+    - Analiza zmienności: notebooks/Variability.ipynb
