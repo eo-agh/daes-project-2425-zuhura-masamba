@@ -47,11 +47,13 @@ markdown_extensions:
   - pymdownx.highlight
 
 nav:
-  - Strona główna: index.md
-  - Projekt:
-    - Opis: desc.md
-    - Log: log.md
-  - Kod:
-    - EDA: notebooks/EDA.ipynb
-    - Analiza trendu: notebooks/Trend.ipynb
-    - Analiza zmienności: notebooks/Variability.ipynb
+  - 🏠 Strona główna: index.md
+  - 📁 Projekt:
+      - 📝 Opis: desc.md
+      - 🗓️ Log: log.md
+  - 💻 Kod:
+      - 🔍 Ekstrakcja Danych: notebooks/Data_Extraction.ipynb
+      - 🗺️ Mapowanie stacji: notebooks/Rename.ipynb
+      - 📊 EDA: notebooks/EDA.ipynb
+      - 📈 Analiza trendu: notebooks/Trend.ipynb
+      - 🔄 Analiza zmienności: notebooks/Variability.ipynb

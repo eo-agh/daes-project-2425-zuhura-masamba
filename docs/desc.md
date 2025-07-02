@@ -1,47 +1,47 @@
-# 📊 Projekt: Zmiany klimatyczne w miastach – analiza trendów w danych z Copernicus Climate Data Store
+# 📊 Projekt: Zmiany klimatyczne w miastach – analiza danych meteorologicznych
 
 ## 🎯 Cel
 
-Celem projektu jest analiza długoterminowych trendów wybranych parametrów meteorologicznych (takich jak temperatura powietrza, suma opadów i prędkość wiatru) w polskich miastach wojewódzkich na podstawie danych z ERA5 dostępnych w Copernicus Climate Data Store. Badanie pozwoli na:
+Celem projektu jest analiza długoterminowych zmian parametrów klimatycznych (temperatura, występowanie opadów, występowanie ekstremalnych zjawisk pogodowych) w wybranych miastach europejskich. Analiza oparta jest na danych meteorologicznych z wieloletnich serii czasowych, a celem jest:
 
-- identyfikację zmian klimatycznych w ujęciu lokalnym (miejskim),
-- porównanie tempa i charakteru zmian w miastach o różnych warunkach klimatycznych,
-- ocenę sezonowości i ekstremalnych wartości,
-- przygotowanie prostych prognoz przyszłych wartości na podstawie analizy szeregów czasowych.
-
----
+- identyfikacja lokalnych trendów klimatycznych,
+- porównanie zmian pomiędzy różnymi miastami,
+- detekcja istotnych statystycznie trendów,
+- ocena sezonowości i zmienności parametrów klimatycznych.
 
 ## 🧪 Metody
 
-Projekt będzie realizowany z użyciem metod analizy danych szeregów czasowych i eksploracyjnej analizy danych (EDA):
+Projekt opiera się na eksploracyjnej analizie danych (EDA), analizie statystycznej oraz modelowaniu szeregu czasowego.
 
-### 1. Wstępne przetwarzanie danych
-- Wczytanie danych z plików `.nc`
-- Ekstrakcja danych dla współrzędnych miast wojewódzkich
-- Agregacja dziennych danych do miesięcznych i rocznych
+### 1. Wczytanie i przygotowanie danych
+- Dane przechowywane są w plikach `.pkl` oraz `.csv`
+- Struktura danych to słownik z nazwami miast jako kluczami i odpowiadającymi szeregami czasowymi
+- Dodatkowe metadane zawierają m.in. współrzędne stacji
 
 ### 2. Eksploracyjna analiza danych (EDA)
-- Wykresy trendów (liniowych i nieliniowych)
-- Sezonowość i rozkłady roczne
-- Wykresy pudełkowe, mapy cieplne, korelacje
+- Analiza braków danych i jakości pomiarów
+- Agregacja miesięczna i roczna danych
+- Wizualizacja trendów i rozkładów
 
-### 3. Analiza statystyczna trendu
-- Dopasowanie regresji liniowej do danych rocznych
-- Testy statystyczne (np. test Manna-Kendalla) do oceny istotności trendu
+### 3. Analiza trendu i zmienności
+- Dopasowanie modeli trendu (LOWESS)
+- Dekonstrukcja sezonowości metodą STL
+- Obliczanie i wizualizacja zmienności rocznej i sezonowej
 
-### 4. Modelowanie prognostyczne
-- Model ARIMA do prognozy temperatury/opadów na kilka lat w przód
-- Walidacja modelu na danych z ostatnich lat (podział na zbiór treningowy/testowy)
-- Ocena niepewności prognoz
-
----
+### 4. Testy statystyczne
+- Testy normalności (Shapiro-Wilka)
+- Porównanie rozkładów między miastami i okresami (testy t-Studenta, Manna–Whitneya, Levene’a)
 
 ## 🛠 Techniczna implementacja
 
-Projekt zostanie zrealizowany z wykorzystaniem języka **Python** i następujących bibliotek:
+Projekt został zrealizowany w języku **Python 3.12**, z wykorzystaniem notatników **Jupyter**. Wykorzystane biblioteki:
 
-- `xarray`, `netCDF4` – wczytywanie i przetwarzanie danych `.nc`
-- `pandas`, `numpy` – manipulacja danymi i agregacja czasowa
-- `matplotlib`, `seaborn`, `plotly` – wizualizacja danych
-- `statsmodels` – analiza statystyczna i modelowanie ARIMA
-- `scikit-learn` – podział danych i walidacja modelu
+- `pandas`, `numpy` – przetwarzanie danych
+- `matplotlib`, `seaborn` – wizualizacja
+- `statsmodels` – dekompozycja szeregu czasowego i analiza trendów
+- `scipy.stats` – testy statystyczne
+- `pickle`, `os`, `re` – obsługa danych i automatyzacja operacji
+
+---
+
+Szczegółowy kod i wyniki analiz znajdują się w notatnikach w sekcji **Kod**.
