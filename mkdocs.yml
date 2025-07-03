@@ -49,7 +49,7 @@ markdown_extensions:
 nav:
   - 🏠 Strona główna: index.md
   - 📁 Projekt:
-      - 📝 Opis: 	
+      - 📝 Opis: desc.md
       - 🗓️ Log: log.md
   - 💻 Kod:
       - 🔍 Ekstrakcja Danych: notebooks/Data_Extraction.ipynb
