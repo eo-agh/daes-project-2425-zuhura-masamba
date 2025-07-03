@@ -49,7 +49,7 @@ markdown_extensions:
 nav:
   - 🏠 Strona główna: index.md
   - 📁 Projekt:
-      - 📝 Opis: desc.md
+      - 📝 Opis: 	
       - 🗓️ Log: log.md
   - 💻 Kod:
       - 🔍 Ekstrakcja Danych: notebooks/Data_Extraction.ipynb
@@ -57,3 +57,4 @@ nav:
       - 📊 EDA: notebooks/EDA.ipynb
       - 📈 Analiza trendu: notebooks/Trend.ipynb
       - 🔄 Analiza zmienności: notebooks/Variability.ipynb
+      - 🎯 Predykcja: notebooks/Predictions.ipynb
